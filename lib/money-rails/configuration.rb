@@ -20,6 +20,10 @@ module MoneyRails
 
     # Configuration parameters
 
+    def infinite_precision=(infinite_precision)
+      Money.infinite_precision = infinite_precision
+    end
+    
     def default_currency
       Money.default_currency
     end
